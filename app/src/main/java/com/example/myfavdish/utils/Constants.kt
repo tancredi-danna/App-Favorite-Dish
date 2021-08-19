@@ -9,17 +9,19 @@ object Constants{
     const val DISH_IMAGE_SOURCE_LOCAL : String = "Local"
     const val DISH_IMAGE_SOURCE_ONLINE : String = "Online"
 
+    const val EXTRA_DISH_DETAILS: String = "DishDetails"
+
     fun dishTypes():ArrayList<String>{
 
         val list = ArrayList<String>()
-        list.add("breakfast")
-        list.add("lunch")
-        list.add("snacks")
-        list.add("dinner")
-        list.add("salad")
-        list.add("side dish")
-        list.add("dessert")
-        list.add("other")
+        list.add("Breakfast")
+        list.add("Lunch")
+        list.add("Snacks")
+        list.add("Dinner")
+        list.add("Salad")
+        list.add("Side dish")
+        list.add("Dessert")
+        list.add("Other")
 
         return  list
     }

@@ -6,9 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.myfavdish.application.FavDishApplication
 import com.example.myfavdish.databinding.FragmentFavoriteDishesBinding
+import com.example.myfavdish.model.entities.FavDish
+import com.example.myfavdish.view.activities.MainActivity
 import com.example.myfavdish.view.adapters.FavDishAdapter
 import com.example.myfavdish.viewmodel.FavDishViewModel
 import com.example.myfavdish.viewmodel.FavDishViewModelFactory
@@ -67,4 +70,19 @@ class FavoriteDishesFragment : Fragment() {
             }
         }
     }
+    fun favoriteDishDetails(favDish: FavDish){
+        findNavController().navigate(FavoriteDishesFragmentDirections.actionNavigationFavoriteDishesToNavigationDishDetails2(favDish))
+        if (requireActivity() is MainActivity){
+        (activity as MainActivity?)?.hideBottomNavigationView()
+     }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (requireActivity() is MainActivity){
+            (activity as MainActivity?)?.showBottomNavigationView()
+        }
+    }
+
+
 }

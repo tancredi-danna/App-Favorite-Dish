@@ -16,7 +16,6 @@ import com.example.myfavdish.databinding.FragmentDishDetailsBinding
 import com.example.myfavdish.viewmodel.FavDishViewModel
 import com.example.myfavdish.viewmodel.FavDishViewModelFactory
 import java.io.IOException
-import java.util.*
 
 
 class DishDetailsFragment : Fragment() {
@@ -51,43 +50,43 @@ class DishDetailsFragment : Fragment() {
             }catch (e : IOException){
                 e.printStackTrace()
             }
-                    /*.listener(object :RequestListener<Drawable>{
-                        override fun onLoadFailed(
-                            e: GlideException?,
-                            model: Any?,
-                            target: Target<Drawable>?,
-                            isFirstResource: Boolean
-                        ): Boolean {
-                            Log.e("TAG", "error uploading the image")
+            /*.listener(object :RequestListener<Drawable>{
+                            override fun onLoadFailed(
+                                e: GlideException?,
+                                model: Any?,
+                                target: Target<Drawable>?,
+                                isFirstResource: Boolean
+                            ): Boolean {
+                                Log.e("TAG", "error uploading the image")
 
-                            return false
-                               }
+                                return false
+                                   }
 
-                        override fun onResourceReady(
-                            resource: Drawable?,
-                            model: Any?,
-                            target: Target<Drawable>?,
-                            dataSource: DataSource?,
-                            isFirstResource: Boolean
-                        ): Boolean {
-                            if (resource != null) {
-                                Palette.from(resource.toBitmap()).generate(){
-                                    palette ->
-                                    val intColor = palette?.vibrantSwatch?.rgb ?: 0
-                                    mBinding!!.rlDishDetailMain.setBackgroundColor(intColor)
+                            override fun onResourceReady(
+                                resource: Drawable?,
+                                model: Any?,
+                                target: Target<Drawable>?,
+                                dataSource: DataSource?,
+                                isFirstResource: Boolean
+                            ): Boolean {
+                                if (resource != null) {
+                                    Palette.from(resource.toBitmap()).generate(){
+                                        palette ->
+                                        val intColor = palette?.vibrantSwatch?.rgb ?: 0
+                                        mBinding!!.rlDishDetailMain.setBackgroundColor(intColor)
+                                    }
                                 }
+                                return false
                             }
-                            return false
-                        }
 
-                    })
+                        })
 
-            }catch (e : IOException){
-                e.printStackTrace()
-            }*/
+                }catch (e : IOException){
+                    e.printStackTrace()
+                }*/
 
             mBinding!!.tvTitle.text = it.dishDetails.title
-            mBinding!!.tvType.text = it.dishDetails.type.capitalize(Locale.ROOT)
+            mBinding!!.tvType.text = it.dishDetails.type
             mBinding!!.tvCategory.text = it.dishDetails.category
             mBinding!!.tvIngredients.text = it.dishDetails.ingredients
             mBinding!!.tvCookingDirection.text = it.dishDetails.instructionsToCook

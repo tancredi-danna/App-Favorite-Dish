@@ -10,7 +10,10 @@
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable-v24/ic_favorite_dish.xml" value="0.2703125" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable-v24/ic_random_dish.xml" value="0.2703125" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/favorite_button_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/ic_add.xml" value="0.2703125" />
+        <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/ic_favorite_selected.xml" value="0.2703125" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/drawable/ic_favorite_unselected.xml" value="0.2703125" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/layout/activity_add_update_dish.xml" value="0.21105072463768115" />
@@ -25,7 +28,8 @@
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/layout/fragment_notifications.xml" value="0.21105072463768115" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/layout/fragment_random_dish.xml" value="0.20199275362318841" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/layout/item_custom_list.xml" value="0.21105072463768115" />
-        <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/layout/item_dish_layout.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/layout/item_dish_layout.xml" value="0.6" />
+        <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/menu/menu_adapter.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/tancr/AndroidStudioProjects/MyFavDIsh/app/src/main/res/menu/menu_all_dishes.xml" value="0.25416666666666665" />
       </map>
     </option>

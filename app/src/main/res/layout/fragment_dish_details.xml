@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--TODO Step 1: Design the Dish Details layout.-->
 
-<!--START-->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,7 +11,7 @@
     android:scrollbars="none"
     tools:context=".view.fragments.DishDetailsFragment">
 
-    <!--END-->
+
 
 
     <RelativeLayout
