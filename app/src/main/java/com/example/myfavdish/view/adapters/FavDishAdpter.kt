@@ -1,7 +1,6 @@
 package com.example.myfavdish.view.adapters
 
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -60,7 +59,8 @@ class FavDishAdapter(private val fragment: Fragment):
 
 
                }else{
-                   Log.i("You have clicked", "on ${it.itemId}")
+                   (fragment as AllDishesFragment).deleteDish(dish)
+
                }
                 true
             }

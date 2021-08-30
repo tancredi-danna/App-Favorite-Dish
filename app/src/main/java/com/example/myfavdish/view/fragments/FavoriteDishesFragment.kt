@@ -16,7 +16,7 @@ import com.example.myfavdish.view.adapters.FavDishAdapter
 import com.example.myfavdish.viewmodel.FavDishViewModel
 import com.example.myfavdish.viewmodel.FavDishViewModelFactory
 
-class FavoriteDishesFragment : Fragment() {
+class  FavoriteDishesFragment : Fragment() {
 
 
     private val mFavDishViewModel : FavDishViewModel by viewModels {

@@ -84,7 +84,7 @@ class AddUpdateDishActivity : AppCompatActivity(), View.OnClickListener {
         mBinding = ActivityAddUpdateDishBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        setupActionBar()
+
 
         mBinding.ivAddDishImage.setOnClickListener(this@AddUpdateDishActivity)
 
@@ -95,10 +95,12 @@ class AddUpdateDishActivity : AppCompatActivity(), View.OnClickListener {
         mBinding.etCookingTime.setOnClickListener(this)
 
         mBinding.btnAddDish.setOnClickListener(this)
-        if(intent.hasExtra(Constants.EXTRA_DISH_DETAILS)){
 
+        if(intent.hasExtra(Constants.EXTRA_DISH_DETAILS)){
             mFavDishDetails = intent.getParcelableExtra(Constants.EXTRA_DISH_DETAILS)
         }
+        setupActionBar()
+
         mFavDishDetails?.let {
             if(it.id != 0){
                 mImagePath = it.image
@@ -114,7 +116,7 @@ class AddUpdateDishActivity : AppCompatActivity(), View.OnClickListener {
                 mBinding.etCookingTime.setText(it.cookingTime)
                 mBinding.etDirectionToCook.setText(it.instructionsToCook)
                 mBinding.btnAddDish.setText(R.string.lbl_update_dish)
-                mBinding.toolbarAddDishActivity.setTitle(R.string.lbl_update_dish)
+
             }
         }
     }
@@ -360,7 +362,7 @@ class AddUpdateDishActivity : AppCompatActivity(), View.OnClickListener {
                 mCustomListDialog.dismiss()
                 mBinding.etCategory.setText(item)
             }
-            else ->{
+            Constants.DISH_COOKING_TIME ->{
                 mCustomListDialog.dismiss()
                 mBinding.etCookingTime.setText(item)
             }
@@ -415,7 +417,7 @@ class AddUpdateDishActivity : AppCompatActivity(), View.OnClickListener {
                             isFirstResource: Boolean
                         ): Boolean {
                             resource?.let {
-                                val bitmap : Bitmap = resource.toBitmap()
+                                val bitmap : Bitmap = it.toBitmap()
                                 mImagePath = saveImageToInternalStorage(bitmap)
                                 Log.i("ImagePath", mImagePath)
 
@@ -475,7 +477,7 @@ class AddUpdateDishActivity : AppCompatActivity(), View.OnClickListener {
         binding.tvTitle.text = title
         binding.rvList.layoutManager = LinearLayoutManager(this)
 
-        val adapter = CustomListAdapter(this, itemsList, selection)
+        val adapter = CustomListAdapter(this,null, itemsList, selection)
         binding.rvList.adapter = adapter
 
         mCustomListDialog.show()
